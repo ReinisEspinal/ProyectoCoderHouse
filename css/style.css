@@ -1,6 +1,10 @@
 :root {
-    --primary-color: #ffffff --second-color: #e26309 --third-color: #323232;
+    --primary-color: #ffffff;
+    --second-color: #e26309;
+    --third-color: #323232;
+
     --primary-font-size: 16px;
+    --second-font-size: 30px;
 }
 
 * {
@@ -10,7 +14,129 @@
 }
 
 body {
-    background-color: var(--second-color);
+    background-color: var(--primary-color);
     color: var(--third-color);
     font-size: var(--primary-font-size);
+    display: grid;
+    grid-gap: 5px;
 }
+
+p {
+    text-align: justify;
+}
+
+.top-section-tag {
+    grid-area: LayerNav;
+}
+
+.nav-ul-tag li {
+    list-style: none;
+    display: inline-block;
+}
+
+.nav-ul-tag a {
+
+    text-decoration: none;
+
+}
+
+.header-tag {
+    grid-area: LayerHeader;
+
+}
+
+.main-content-tag {
+    grid-area: LayerContent;
+}
+
+.footer-tag {
+    grid-area: LayerFooter;
+}
+
+
+#logoMCD {
+    padding: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* CSS styles for larger mobile devices */
+
+    body {
+
+        grid-template: "LayerNav"
+            "LayerHeader"
+            "LayerContent"
+            "LayerFooter";
+        justify-content: center;
+
+        width: 100%;
+    }
+
+    .header-tag {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top-section-tag {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-tag {}
+
+    .nav-tag li {
+        padding: 5px;
+    }
+
+    .banner-mcd {
+        width: 100%;
+    }
+
+    .precaliccate-btn {
+        background-color: var(--second-color);
+        color: var(--primary-color);
+        font-weight: bold;
+        font-size: var(--second-font-size);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .main-content-tag {
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .businessInfo {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 15px;
+    }
+
+    .businessInfo-Text {
+        padding-left: 10px;
+    }
+
+    #apartamentosImg {
+
+        object-fit: cover;
+        height: 120px;
+        width: 132px;
+        border: 1px solid var(--third-color);
+        border-radius: 60%;
+    }
+
+    #imgGeneric {
+        width: 100%;
+    }
+}
+
+/*hr {
+    width: 80%;
+        border: 1px solid var(--second-color);
+}*/
