@@ -11,18 +11,22 @@
     margin: 0;
     border: 0;
     padding: 0;
+    width: 100%;
 }
 
 body {
     background-color: var(--primary-color);
     color: var(--third-color);
     font-size: var(--primary-font-size);
-    display: grid;
-    grid-gap: 5px;
 }
 
 p {
     text-align: justify;
+}
+
+.container {
+    display: grid;
+    grid-gap: 15px;
 }
 
 .top-section-tag {
@@ -31,18 +35,16 @@ p {
 
 .nav-ul-tag li {
     list-style: none;
-    display: inline-block;
+    width: max-content;
 }
 
 .nav-ul-tag a {
-
     text-decoration: none;
 
 }
 
 .header-tag {
     grid-area: LayerHeader;
-
 }
 
 .main-content-tag {
@@ -53,27 +55,21 @@ p {
     grid-area: LayerFooter;
 }
 
-
-#logoMCD {
-    padding: 5px;
-}
-
-@media only screen and (max-width: 768px) {
+@media only screen and (width <= 531px) {
 
     /* CSS styles for larger mobile devices */
 
-    body {
+    .container {
 
-        grid-template: "LayerNav"
-            "LayerHeader"
-            "LayerContent"
-            "LayerFooter";
-        justify-content: center;
+        grid-template:
+            "LayerNav" 200px
+            "LayerHeader" 200px
+            "LayerContent" 400px
+            "LayerFooter" 700px;
 
-        width: 100%;
     }
 
-    .header-tag {
+    .nav-ul-tag {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -81,62 +77,43 @@ p {
 
     .top-section-tag {
         display: flex;
-        align-items: center;
         flex-direction: column;
-        width: 100%;
-    }
-
-    .nav-tag {}
-
-    .nav-tag li {
-        padding: 5px;
-    }
-
-    .banner-mcd {
-        width: 100%;
-    }
-
-    .precaliccate-btn {
-        background-color: var(--second-color);
-        color: var(--primary-color);
-        font-weight: bold;
-        font-size: var(--second-font-size);
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-
-    .main-content-tag {
-        padding: 5px;
-        margin: 5px;
-    }
-
-    .businessInfo {
-        display: flex;
-        justify-content: space-around;
         align-items: center;
-        margin: 15px;
     }
 
-    .businessInfo-Text {
-        padding-left: 10px;
-    }
-
-    #apartamentosImg {
-
-        object-fit: cover;
-        height: 120px;
-        width: 132px;
-        border: 1px solid var(--third-color);
-        border-radius: 60%;
-    }
-
-    #imgGeneric {
-        width: 100%;
+    #logoMCD {
+        width: 100px;
     }
 }
 
-/*hr {
-    width: 80%;
-        border: 1px solid var(--second-color);
-}*/
+@media only screen and (min-width: 531px) {
+
+    /* CSS styles for larger mobile devices */
+
+    .container {
+
+        grid-template:
+            "LayerNav" 130px
+            "LayerHeader" 200px
+            "LayerContent" 400px
+            "LayerFooter" 700px;
+    }
+
+    .nav-ul-tag {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 10px;
+        font-size: var(--primary-font-size);
+    }
+
+    .nav-ul-tag li {
+        padding: 10px;
+    }
+
+    #logoMCD {
+        width: 100px;
+        margin-top: 5px;
+    }
+
+}
