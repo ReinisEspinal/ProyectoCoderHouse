@@ -3,14 +3,38 @@
     color: #E26309;
 }
 
-#logoImg {
-
-    min-width : 60px;
-    max-width : 60%;
+.FAQ-section {
+    background-image: url('../assets/img/FAQLayer.jpg');
+    background-size: cover;
 }
 
-@media screen {
-    .container-fluid{
-        justify-content: center;
-    }
+#logoImg {
+    min-width: 60px;
+    max-width: 60%;
+}
+
+#bannerImg {
+    width: 100%;
+}
+
+
+.responsive-video {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 60px;
+    overflow: hidden;
+}
+
+.responsive-video iframe,
+.responsive-video object,
+.responsive-video embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#valoracionEstrellas {
+    width: 30%;
 }
