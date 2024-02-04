@@ -21,6 +21,8 @@
 <body>
   <!-- HEADER -->
   <header>
+
+    <!-- NAV -->
     <nav class="navbar bg-white navbar-expand-md">
       <section class="container-fluid">
         <a class="navbar-brand px-5" href="#"><img id="logoImg" class="img-fluid" src="assets/img/logo/logoMCD.png"
@@ -57,11 +59,42 @@
         </article>
       </section>
     </nav>
-    <section class="bannerSection">
-      <article class="article-banner">
-        <img id="bannerImg" class="img-fluid" src="assets/img/banner/Bannerbanner.png" alt="logo">
+    <!-- END NAV -->
+
+    <!-- CAROUSEL -->
+    <section id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <article class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
       </article>
+      <article class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/img/banner/Bannerbanner.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/banner/BannerProyecto.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/FAQ.png" class="d-block w-100" alt="...">
+        </div>
+      </article>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </section>
+    <!-- END CAROUSEL-->
+
   </header>
   <!-- END HEADER-->
 
