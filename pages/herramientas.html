@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- link google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@500;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <title>MCD-Herramientas</title>
+</head>
+<div class="header">
+    <img id="logo" src="../assets/images/logoMCD.png" alt="Logo MCD MIND CORP Dominicana">
+    <nav class="navbar bg-white navbar-expand-md">
+        <section class="container-fluid">
+          <a class="navbar-brand px-5" href="#"><img id="logoImg" class="img-fluid" src="../assets/img/logo/logoMCD.png"
+              alt="logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <article class="offcanvas offcanvas-end bg-icecream" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">MCD - MIND CORP DOM</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  active" href="proyectos.html">Proyectos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="herramientas.html">Herramientas</a>
+                  </li>
+              </ul>
+            </div>
+          </article>
+        </section>
+      </nav>
+    <img id="bannerHerramientas" src="../assets/images/bannerHerramientas.png" alt="Esto es un banner">
+</div>
+<main>
+    <section id="form-section" class="section">
+        <article id="calculadora-container" class="caluladoraPrestamo">
+            <form id="calculadora-form">
+                <header id="header-form">
+                    <h1>Calculadora de préstamo hipotecario</h1>
+                </header>
+                <ul id="form-list">
+                    <li><label for="montoEjemplo1">Valor Vivienda</label>
+                        <input id="montoEjemplo1" type="number" placeholder="Digital el monto">
+                    </li>
+                    <li><label for="montoEjemplo2">Monto del préstamo</label>
+                        <input id="montoEjemplo2" type="number" placeholder="Digital el monto">
+                    </li>
+                    <li><label for="montoEjemplo2">Tasa</label>
+                        <input id="montoEjemplo2" type="number" placeholder="Digital la tasa">
+                    </li>
+                    <button type="submit">Calcular</button>
+                </ul>
+            </form>
+        </article>
+    </section>
+</main>
+<footer>
+    <section id="footerSection1">
+        <div class="obtenerVivienda-Div">
+            <img id="edifIcon" src="../assets/images/edif.png" alt="Icono de edificio">
+            <span class="obtenerVivienda-Text btn-ObtenerVivienda">Obtener Vivienda</span>
+        </div>
+
+        <articule class="footer-card">
+            <div class="footer-card-header">
+                <img id="logoFooter" src="../assets/images/logoMCD.png" alt="Logo MCD MIND CORP Dominicana">
+            </div>
+            <div class="info-card-content">
+                <p>Nuestra experiencia, capacidad y compromiso es la base que colocamos en cada proyecto, para hacer
+                    realidad los sueños de cada familia.</p>
+
+                <div div id="redesSociales">
+                    <img src="../assets/images/x.png" alt="logo de x">
+                    <img src="../assets/images/whatsapp.png" alt="logo de WhatsApp">
+                    <img src="../assets/images/facebook.png" alt="logo de Facebook">
+                    <img src="../assets/images/instagram.png" alt="logo de Instagram">
+                </div>
+            </div>
+        </articule>
+    </section>
+    <section id="footerSection2">
+        <article class="contactInfo-Footer">
+            <div class="footerContactoContent">
+                <h3>Teléfonos</h3>
+                <ul class="cont-list">
+                    <li>809.560.9237</li>
+                    <li>809.258.3672</li>
+                </ul>
+                <h4>Dirección</h4>
+                <address>Diamond Mall, 1er nivel,<br>
+                    local 72-A,Santo Domingo, D.N.</address>
+            </div>
+        </article>
+    </section>
+</footer>
+</body>
+
+</html>
