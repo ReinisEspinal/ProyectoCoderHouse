@@ -17,22 +17,23 @@
 </head>
 
 <body>
+    <!-- HEADER -->
     <header class="header">
+        <!-- NAV -->
         <nav class="navbar bg-white navbar-expand-md">
             <section class="container-fluid">
-                <a class="navbar-brand px-5" href="#"><img id="logoImg" class="img-fluid"
-                        src="../assets/img/logo/logoMCD.png" alt="logo"></a>
+                <img id="logoImg" class="img-fluid navbar-brand" src="../assets/img/logo/logoMCD.png" alt="logo">
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <article class="offcanvas offcanvas-end bg-icecream" tabindex="-1" id="offcanvasNavbar"
+                <article class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
+                    <article class="offcanvas-header">
                         <h5 class="offcanvas-title" id="offcanvasNavbarLabel">MCD - MIND CORP DOM</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
+                    </article>
+                    <article class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item">
                                 <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
@@ -50,16 +51,23 @@
                                 <a class="nav-link" href="herramientas.html">Herramientas</a>
                             </li>
                         </ul>
-                    </div>
+                    </article>
                 </article>
             </section>
         </nav>
-        <img id="bannerNosotros" class="img-fluid" src="../assets/img/banner_nosotros.jpg" alt="Esto es un banner">
+        <!-- END NAV -->
+
+        <!-- BANNER -->
+        <img id="bannerNosotros" class="img-fluid banner" src="../assets/img/banner/banner_nosotros.jpg"
+            alt="Esto es un banner">
+        <!-- END BANNER -->
     </header>
+    <!-- END HEADER -->
+
+    <!-- MAIN -->
     <main>
         <section class="container-fluid">
             <section class="row">
-
                 <!--VIDEO-->
                 <article class="col-md-12 my-3">
 
@@ -73,6 +81,7 @@
                 </article>
                 <!-- END VIDEO -->
 
+                <!-- VALORES EMPRESA-->
                 <article class="col-md-4 my-3">
                     <p class="text-center"> <span class="fw-bold display-6">Historia</span></p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sequi maxime repudiandae
@@ -81,7 +90,6 @@
                         provident, laboriosam perferendis repudiandae minus vel quia, velit ipsa blanditiis. Voluptas
                         iure quia asperiores nihil.</p>
                 </article>
-
                 <article class="col-md-4 my-3">
                     <p class="text-center"> <span class="fw-bold display-6">Vision</span></p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sequi maxime repudiandae
@@ -98,9 +106,13 @@
                         provident, laboriosam perferendis repudiandae minus vel quia, velit ipsa blanditiis. Voluptas
                         iure quia asperiores nihil.</p>
                 </article>
+                <!-- END VALORES EMPRESA-->
+
             </section>
         </section>
     </main>
+    <!-- END MAIN -->
+
     <!-- FOOTER -->
     <footer class="text-center text-lg-start bg-body-tertiary text-muted p-4">
 

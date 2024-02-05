@@ -25,19 +25,18 @@
     <!-- NAV -->
     <nav class="navbar bg-white navbar-expand-md">
       <section class="container-fluid">
-        <a class="navbar-brand px-5" href="#"><img id="logoImg" class="img-fluid" src="assets/img/logo/logoMCD.png"
-            alt="logo"></a>
+        <img id="logoImg" class="img-fluid navbar-brand" src="assets/img/logo/logoMCD.png" alt="logo">
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
           aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <article class="offcanvas offcanvas-end bg-icecream" tabindex="-1" id="offcanvasNavbar"
+        <article class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
           aria-labelledby="offcanvasNavbarLabel">
-          <div class="offcanvas-header">
+          <article class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasNavbarLabel">MCD - MIND CORP DOM</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
+          </article>
+          <article class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
                 <a class="nav-link  active" aria-current="page" href="index.html">Inicio</a>
@@ -52,10 +51,10 @@
                 <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="./pages/herramientas.html">Herramientas</a>
-                </li>
+                <a class="nav-link" href="./pages/herramientas.html">Herramientas</a>
+              </li>
             </ul>
-          </div>
+          </article>
         </article>
       </section>
     </nav>
@@ -73,13 +72,13 @@
       </article>
       <article class="carousel-inner">
         <div class="carousel-item active">
-          <img src="assets/img/apt/aprt1.jpg" class="d-block w-100" alt="...">
+          <img src="assets/img/apt/aprt1.jpg" class="d-block w-100" alt="Imagen de la construcción">
         </div>
         <div class="carousel-item">
-          <img src="assets/img/apt/aprt2.jpg" class="d-block w-100" alt="...">
+          <img src="assets/img/apt/aprt2.jpg" class="d-block w-100" alt="Imagen del balcón">
         </div>
         <div class="carousel-item">
-          <img src="assets/img/apt/aprt3.jpg" class="d-block w-100" alt="...">
+          <img src="assets/img/apt/aprt3.jpg" class="d-block w-100" alt="Imagen de un cuarto">
         </div>
       </article>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -136,17 +135,12 @@
         </article>
         <!-- END VIDEO-->
 
-        <!-- FAQ -->
-        <article class="col-xs-12 col-sm-12 FAQ-section mb-1">
-          <img id="FAQ" src="assets/img/FAQLayer.jpg" class="img-fluid" alt="Imagen de FAQ">
-        </article>
-        <!-- END FAQ -->
 
         <!--CARDS-->
         <article class="col-md-4 col-sm-12 my-2">
           <article class="card-deck">
             <section class="card">
-              <div class="card-body">
+              <article class="card-body">
                 <img class="card-title img-fluid" id="valoracionEstrellas"
                   src="./assets/img/iconos/ValoracionEstrellas.jpg" alt="ValoraciónEstrellas">
                 <p class="card-text">
@@ -157,14 +151,14 @@
                   </q>
                 </p>
                 <p href="#" class="text-start fw-bolder">Juan Mendez</p>
-              </div>
+              </article>
             </section>
           </article>
         </article>
         <article class="col-md-4 col-sm-12 my-2">
           <article class="card-deck">
             <section class="card">
-              <div class="card-body">
+              <article class="card-body">
                 <img class="card-title img-fluid" id="valoracionEstrellas"
                   src="./assets/img/iconos/ValoracionEstrellas.jpg" alt="ValoraciónEstrellas">
                 <p class="card-text">
@@ -175,14 +169,14 @@
                   </q>
                 </p>
                 <p href="#" class="text-start fw-bolder">Juan Mendez</p>
-              </div>
+              </article>
             </section>
           </article>
         </article>
         <article class="col-md-4 col-sm-12 my-2">
           <article class="card-deck">
             <section class="card">
-              <div class="card-body">
+              <article class="card-body">
                 <img class="card-title img-fluid" id="valoracionEstrellas"
                   src="./assets/img/iconos/ValoracionEstrellas.jpg" alt="ValoraciónEstrellas">
                 <p class="card-text">
@@ -193,11 +187,90 @@
                   </q>
                 </p>
                 <p href="#" class="text-start fw-bolder">Juan Mendez</p>
-              </div>
+              </article>
             </section>
           </article>
         </article>
         <!-- END CARDS-->
+
+
+        <!-- FAQ -->
+        <article class="col-xs-12 col-md-12 FAQ-section my-5">
+
+          <p class="display-6 fw-bold text-start faq-title mx-5">FAQ</p>
+
+          <!-- ACCORDION -->
+          <section class="accordion mx-5" id="accordionPanelsStayOpenExample">
+
+            <!-- FIRST QUESTION-->
+            <article class="accordion-item">
+              <article class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                  aria-controls="panelsStayOpen-collapseOne">
+                  <span>Como obtener un apartamento ?</span>
+                </button>
+              </article>
+              <article id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                aria-labelledby="panelsStayOpen-headingOne">
+                <article class="accordion-body">
+                  <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ea provident repudiandae aspernatur
+                    unde qui magni impedit reprehenderit totam! Doloribus, excepturi vero sed autem magnam ullam quasi
+                    officiis consectetur nesciunt!</P>
+                </article>
+              </article>
+            </article>
+            <!-- END FIRST QUESTION-->
+
+            <!-- SECOND QUESTION-->
+            <article class="accordion-item">
+              <article class="accordion-header" id="panelsStayOpen-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseTwo">
+                  <span>Cual es el procedimiento para aplicar?</span>
+                </button>
+              </article>
+              <article id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingTwo">
+                <article class="accordion-body">
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo voluptate debitis quasi, rem fugit
+                    expedita iusto quo blanditiis similique dicta ut unde quos sit molestias cum error adipisci ab
+                    repudiandae!
+                  </p>
+                </article>
+              </article>
+            </article>
+            <!-- END SECOND QUESTION-->
+
+            <!-- THIRD QUESTION-->
+            <article class="accordion-item">
+              <article class="accordion-header" id="panelsStayOpen-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseThree">
+                  <span>Hay una edad minima para aplicar ?</span>
+                </button>
+              </article>
+              <article id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingThree">
+                <article class="accordion-body">
+                  <P>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos, mollitia. Doloremque reprehenderit
+                    placeat quisquam eveniet. Alias laboriosam placeat ex facere quaerat voluptatem dolorum velit vero
+                    rem! Dolor magni enim sint.
+                  </P>
+                </article>
+              </article>
+            </article>
+            <!-- END THIRD QUESTION-->
+
+          </section>
+          <!-- END ACCORDION -->
+
+        </article>
+        <!-- END FAQ -->
 
       </section>
     </section>
