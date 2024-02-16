@@ -1,12 +1,12 @@
-:root {
-    --primary-color: #ffffff;
-    --second-color: #e26309;
-    --third-color: #323232;
-
-    --primary-font-size: 16px;
-    --second-font-size: 30px;
+/*? pseuloelementos*/
+.imagen :hover {
+    background-color: black;
+    color: white;
+    border: 2px solid rgba(0, 0, 0, 0.722);
+    box-shadow: 2px 2px rgb(230, 201, 173);
 }
 
+<<<<<<< HEAD
 * {
     margin: 0;
     border: 0;
@@ -116,4 +116,122 @@ p {
         margin-top: 5px;
     }
 
+=======
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: #E26309;
+}
+
+.faq-title {
+    color: #E26309;
+}
+
+#logoImg {
+    min-width: 60px;
+
+}
+
+.banner {
+    width: 100%;
+}
+
+.calculadoraContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgCalculadora {
+    height: 280px;
+}
+
+.responsive-video {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 60px;
+    overflow: hidden;
+}
+
+.responsive-video iframe,
+.responsive-video object,
+.responsive-video embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.responsive-video-nosotros {
+    display: flex;
+    justify-content: center;
+}
+
+#video-youtube-iframe {
+    width: 100%;
+    height: 400px;
+}
+
+.contenedor-mapa {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+#valoracionEstrellas {
+    width: 30%;
+}
+
+.imagen img {
+    width: 100%;
+}
+
+#bannerProyecto {
+    min-height: 200px;
+    object-fit:cover;
+}
+
+.galeria {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+
+@media (min-width:100px) {
+    .galeria {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (min-width:520px) {
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width:728px) {
+    .galeria {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width:1024px) {
+    .galeria {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.carousel-item img {
+    max-width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.imagen img {
+    width: 100%;
+    height: 100%;
+>>>>>>> main
 }
