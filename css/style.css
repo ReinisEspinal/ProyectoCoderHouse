@@ -123,3 +123,20 @@
     width: 100%;
     height: 100%;
 }
+
+
+
+.banner{animation: myAnim 1s linear 0s 1 normal both;}
+@keyframes myAnim {
+	0% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0.2;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
